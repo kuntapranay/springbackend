@@ -32,12 +32,12 @@ pipeline
     {
       scripted 
       {
-        void file_check()
+        def file_check()
       }
     }
   }
 }
-void file_check()
+def file_check()
 {
     echo 'file check' 
 }
