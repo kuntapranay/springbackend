@@ -28,9 +28,9 @@ pipeline
         sh 'tree'
       }
     }
-  stage('Generate build') 
+  stage('Function') 
     {
-    try
+    steps
       {
          file_check()
       }
