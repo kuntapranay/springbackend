@@ -37,7 +37,7 @@ pipeline
     }
   }
 }
-void file_check=
+void file_check()
 {
     stage('a'){
         echo 'file check' 
