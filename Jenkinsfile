@@ -32,12 +32,12 @@ pipeline
     {
     try
       {
-        def file_check()
+         file_check()
       }
     }
   }
 }
-def file_check=
+void file_check=
 {
     stage('a'){
         echo 'file check' 
