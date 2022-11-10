@@ -28,6 +28,15 @@ pipeline
         sh 'tree'
       }
     }
-  
+  stage('Generate build') 
+    {
+      steps 
+      {
+        void file_check()
+      }
+    }
   }
+}
+void file_check(){
+    echo 'file check' 
 }
