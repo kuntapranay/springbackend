@@ -37,7 +37,7 @@ pipeline
     }
   }
 }
-def file_check()
+def file_check=
 {
     stage('a'){
         echo 'file check' 
