@@ -30,13 +30,14 @@ pipeline
     }
   stage('Generate build') 
     {
-      steps 
+      scripted 
       {
         void file_check()
       }
     }
   }
 }
-void file_check(){
+void file_check()
+{
     echo 'file check' 
 }
