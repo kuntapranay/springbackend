@@ -30,7 +30,7 @@ pipeline
     }
   stage('Generate build') 
     {
-      scripted 
+    try
       {
         def file_check()
       }
@@ -39,5 +39,7 @@ pipeline
 }
 def file_check()
 {
-    echo 'file check' 
+    stage('a'){
+        echo 'file check' 
+    }
 }
