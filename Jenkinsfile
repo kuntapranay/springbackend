@@ -16,7 +16,18 @@ pipeline
       {
         sh "mvn clean"
         sh 'ls -la'
+        sh "tree"
       }
     }
+    stage('Generate build') 
+    {
+      steps 
+      {
+        sh "mvn install"
+        sh 'ls -la'
+        sh 'tree'
+      }
+    }
+  
   }
 }
