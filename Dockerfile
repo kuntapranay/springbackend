@@ -1,7 +1,7 @@
 #FROM node:16
-FROM openjdk:11
-WORKDIR /app/spring-backend
-COPY ["/target/spring-backend-0.0.1-SNAPSHOT.jar" ,"/app/Spring-backend"]
+FROM anapsix/alpine-java
+COPY /target/spring-backend-0.0.1-SNAPSHOT.jar /tmp
+WORKDIR /tmp
 #RUN apt update && npm install && npm install -g @angular/cli && ng version | ng v
 EXPOSE 8080
-CMD ["javar -jar spring-backend-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "spring-backend-0.0.1-SNAPSHOT.jar"]
